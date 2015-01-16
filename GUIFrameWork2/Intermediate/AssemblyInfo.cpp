@@ -11,14 +11,14 @@ using namespace System::Security::Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly:AssemblyTitleAttribute("Intermediate")];
-[assembly:AssemblyDescriptionAttribute("")];
-[assembly:AssemblyConfigurationAttribute("")];
-[assembly:AssemblyCompanyAttribute("")];
-[assembly:AssemblyProductAttribute("Intermediate")];
-[assembly:AssemblyCopyrightAttribute("Copyright (c)  2014")];
-[assembly:AssemblyTrademarkAttribute("")];
-[assembly:AssemblyCultureAttribute("")];
+[assembly:AssemblyTitleAttribute(L"Intermediate")];
+[assembly:AssemblyDescriptionAttribute(L"")];
+[assembly:AssemblyConfigurationAttribute(L"")];
+[assembly:AssemblyCompanyAttribute(L"")];
+[assembly:AssemblyProductAttribute(L"Intermediate")];
+[assembly:AssemblyCopyrightAttribute(L"Copyright (c)  2014")];
+[assembly:AssemblyTrademarkAttribute(L"")];
+[assembly:AssemblyCultureAttribute(L"")];
 
 //
 // Version information for an assembly consists of the following four values:
@@ -36,5 +36,3 @@ using namespace System::Security::Permissions;
 [assembly:ComVisible(false)];
 
 [assembly:CLSCompliantAttribute(true)];
-
-[assembly:SecurityPermission(SecurityAction::RequestMinimum, UnmanagedCode = true)];

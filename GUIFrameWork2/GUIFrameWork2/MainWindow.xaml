@@ -1,7 +1,7 @@
-﻿<Window x:Class="GUIFrameWork.MainWindow"
+﻿<Window x:Class="GUIFrameWork2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing_1">
+        Title="MainWindow" Height="350" Width="525">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -29,7 +29,7 @@
         <Grid x:Name="centerGrid" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-            
+
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <ScrollViewer x:Name="mainScrollContainer"   
@@ -37,7 +37,7 @@
                           CanContentScroll="True" 
                           VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" 
                           VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                
+
                 <Grid x:Name="imageContentGrid"
                           Width="{Binding ElementName=workingImage, Path=Width}" 
                           Height="{Binding ElementName=workingImage, Path=Height}"
@@ -46,7 +46,7 @@
                     <Canvas x:Name="workingCanvas" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
             </ScrollViewer>
-            
+
             <ScrollViewer x:Name="secondScrollContainer"   
                           Grid.Column="1"
                           CanContentScroll="True" 
@@ -63,9 +63,5 @@
             </ScrollViewer>
 
         </Grid>
-
-
-
-
     </Grid>
 </Window>

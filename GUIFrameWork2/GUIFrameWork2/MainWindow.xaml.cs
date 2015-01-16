@@ -17,7 +17,7 @@ using Microsoft.Win32;
 using System.Threading;
 using System.Windows.Threading;
 
-namespace GUIFrameWork
+namespace GUIFrameWork2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -83,21 +83,22 @@ namespace GUIFrameWork
                 t.Abort();
             t = new Thread(ts);
             t.Start();
-            
+
         }
         void ThreadFunction()
         {
             while (!stopthread)
             {
-                Dispatcher.Invoke(new Action(() => {
+                Dispatcher.Invoke(new Action(() =>
+                {
                     this.processedworkingImage.Source = Intermediate.Mapper.ProcessVideoFrame();
                 }), DispatcherPriority.ContextIdle);
-                
+
             }
         }
         private void btnStopVideo_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
             stopthread = true;
             if (t != null)
                 t.Abort();
